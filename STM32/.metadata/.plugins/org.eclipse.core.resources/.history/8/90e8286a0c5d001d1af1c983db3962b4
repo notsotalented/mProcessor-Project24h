@@ -1,0 +1,54 @@
+/*
+ * fsm_simple.c
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: ASUS
+ */
+
+#include "fsm_simple.h"
+
+//Simple state
+void fsm_simple_buttons_run() {
+	display7SEG(state);
+	switch(state) {
+	case 0:
+		state = 1;
+		setTimer1(1000);
+		break;
+	case 1:
+		state = 2;
+		setTimer1(1000);
+		break;
+	case 2:
+		state = 3;
+		setTimer1(1000);
+		break;
+	case 3:
+		state = 4;
+		setTimer1(1000);
+		break;
+	case 4:
+		state = 5;
+		setTimer1(1000);
+		break;
+	case 5:
+		state = 6;
+		setTimer1(1000);
+		break;
+	case 6:
+
+		break;
+	case 7:
+
+		break;
+	case 8:
+
+		break;
+	case 9:
+
+		break;
+	default:
+		state = 0;
+		break;
+	}
+}
