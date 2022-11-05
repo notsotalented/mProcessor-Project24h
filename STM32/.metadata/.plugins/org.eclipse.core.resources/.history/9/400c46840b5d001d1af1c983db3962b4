@@ -1,9 +1,0 @@
-/*
- * fsm_simple.c
- *
- *  Created on: Nov 5, 2022
- *      Author: ASUS
- */
-
-#include "fsm_simple.h"
-

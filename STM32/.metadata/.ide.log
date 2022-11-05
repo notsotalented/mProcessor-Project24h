@@ -1537,3 +1537,73 @@
 2022-11-05 20:24:11,956 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 3015mS.
 2022-11-05 20:24:11,958 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
 2022-11-05 20:24:11,961 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2022-11-06 02:24:45,593 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 504587032 Bytes (801112064)
+2022-11-06 02:24:46,697 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 521890584 Bytes (801112064)
+2022-11-06 02:24:50,448 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 645096216 Bytes (801112064)
+2022-11-06 02:24:51,063 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-11-06 02:24:51,063 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-11-06 02:24:51,064 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-11-06 02:24:51,064 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-11-06 02:24:51,064 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2022-11-06 02:24:51,067 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2022-11-06 02:24:51,491 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\MXTmpFiles\license.tmp_save
+2022-11-06 02:24:51,684 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\MXTmpFiles\license.tmp
+2022-11-06 02:24:51,749 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\MXTmpFiles\gpio.tmp_save
+2022-11-06 02:24:51,846 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\MXTmpFiles\gpio.tmp
+2022-11-06 02:24:51,953 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Src\stm32f1xx_it.c_save
+2022-11-06 02:24:52,091 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Src\stm32f1xx_it.c
+2022-11-06 02:24:52,106 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Inc\stm32f1xx_it.h_save
+2022-11-06 02:24:52,209 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Inc\stm32f1xx_it.h
+2022-11-06 02:24:52,252 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Src\stm32f1xx_hal_msp.c_save
+2022-11-06 02:24:52,389 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Src\stm32f1xx_hal_msp.c
+2022-11-06 02:24:52,405 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\MXTmpFiles\system.tmp_save
+2022-11-06 02:24:52,477 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\MXTmpFiles\system.tmp
+2022-11-06 02:24:52,508 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Inc\stm32f1xx_hal_conf.h_save
+2022-11-06 02:24:52,617 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Inc\stm32f1xx_hal_conf.h
+2022-11-06 02:24:52,639 [WARN] IPConfigManager:3148 - IP not found : TIM
+2022-11-06 02:24:52,642 [WARN] CodeGenerator:3268 - IP not found : null
+2022-11-06 02:24:52,669 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Inc\main.h_save
+2022-11-06 02:24:52,910 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Inc\main.h
+2022-11-06 02:24:52,935 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Src\main.c_save
+2022-11-06 02:24:53,093 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Src\main.c
+2022-11-06 02:24:55,107 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 627mS.
+2022-11-06 02:24:55,117 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2022-11-06 02:24:55,871 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2022-11-06 02:24:58,420 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 3303mS.
+2022-11-06 02:24:58,422 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
+2022-11-06 02:24:58,424 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2022-11-06 03:24:04,927 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 464379040 Bytes (801112064)
+2022-11-06 03:24:06,046 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 481632192 Bytes (801112064)
+2022-11-06 03:24:06,772 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 518332352 Bytes (801112064)
+2022-11-06 03:24:07,153 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-11-06 03:24:07,154 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-11-06 03:24:07,154 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-11-06 03:24:07,154 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-11-06 03:24:07,154 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2022-11-06 03:24:07,155 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2022-11-06 03:24:07,655 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\MXTmpFiles\license.tmp_save
+2022-11-06 03:24:07,763 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\MXTmpFiles\license.tmp
+2022-11-06 03:24:07,808 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\MXTmpFiles\gpio.tmp_save
+2022-11-06 03:24:07,919 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\MXTmpFiles\gpio.tmp
+2022-11-06 03:24:08,011 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Src\stm32f1xx_it.c_save
+2022-11-06 03:24:08,148 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Src\stm32f1xx_it.c
+2022-11-06 03:24:08,162 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Inc\stm32f1xx_it.h_save
+2022-11-06 03:24:08,258 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Inc\stm32f1xx_it.h
+2022-11-06 03:24:08,288 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Src\stm32f1xx_hal_msp.c_save
+2022-11-06 03:24:08,406 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Src\stm32f1xx_hal_msp.c
+2022-11-06 03:24:08,412 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\MXTmpFiles\system.tmp_save
+2022-11-06 03:24:08,498 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\MXTmpFiles\system.tmp
+2022-11-06 03:24:08,522 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Inc\stm32f1xx_hal_conf.h_save
+2022-11-06 03:24:08,628 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Inc\stm32f1xx_hal_conf.h
+2022-11-06 03:24:08,649 [WARN] IPConfigManager:3148 - IP not found : TIM
+2022-11-06 03:24:08,652 [WARN] CodeGenerator:3268 - IP not found : null
+2022-11-06 03:24:08,671 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Inc\main.h_save
+2022-11-06 03:24:08,758 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Inc\main.h
+2022-11-06 03:24:08,773 [INFO] CodeEngine:239 - oldGeneratedFile, D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Src\main.c_save
+2022-11-06 03:24:08,915 [INFO] CodeEngine:257 - Generated code: D:\LearningMaterial\Mirco-Processor\Project24h\mProcessor-Project24h\STM32\1852238-MidtermProject24h\Core\Src\main.c
+2022-11-06 03:24:10,219 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 336mS.
+2022-11-06 03:24:10,226 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2022-11-06 03:24:10,965 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2022-11-06 03:24:13,249 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 3023mS.
+2022-11-06 03:24:13,250 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2022-11-06 03:24:13,252 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.

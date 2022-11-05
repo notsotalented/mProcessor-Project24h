@@ -102,9 +102,7 @@ void getKeyInput(){
 				  //TimerForKeyPress = 300;
 				}
 				//9s delay, or is it?
-
-				//300 doesn't yeild the result of 3s delay on my machine. However 900 does.
-				TimerForKeyPress = 300;
+				TimerForKeyPress = 900;
 			}
 			else {
 				TimerForKeyPress--;
