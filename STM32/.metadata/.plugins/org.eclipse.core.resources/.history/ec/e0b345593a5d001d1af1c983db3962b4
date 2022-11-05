@@ -1,0 +1,19 @@
+/*
+ * fsm_led.c
+ *
+ *  Created on: Nov 6, 2022
+ *      Author: ASUS
+ */
+
+#include "fsm_led.h"
+
+int stateled = 0;
+
+void fsm_led_run() {
+	switch(stateled) {
+	case 0:
+
+	case 1:
+
+	}
+}

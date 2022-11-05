@@ -10,6 +10,7 @@
 int button_inc_flag = 0;
 int button_dec_flag = 0;
 int button_reset_flag = 0;
+int button_hold_flag = 2;
 
 int KeyReg0[3] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
 int KeyReg1[3] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
@@ -17,7 +18,7 @@ int KeyReg2[3] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
 
 int KeyReg3[3] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
 
-int TimerForKeyPress = 200;
+int TimerForKeyPress = 300;
 
 int isButtonINCPressed() {
 	if(button_inc_flag == 1) {
@@ -59,6 +60,19 @@ void subKeyProcess(int sw) {
 	}
 }
 
+void holdKeyProcess(int sw) {
+	switch(sw) {
+	case 0:
+		button_inc_flag = 1;
+		break;
+	case 1:
+		button_dec_flag = 1;
+		break;
+	case 2:
+		break;
+	}
+}
+
 void getKeyInput(){
 	for (int i = 0; i < 3; i++) {
 		KeyReg0[i] = KeyReg1[i];
@@ -80,16 +94,23 @@ void getKeyInput(){
 					if (KeyReg2[i] == PRESSED_STATE) {
 					  //TODO
 					  subKeyProcess(i);
+					  button_hold_flag = i;
 					  TimerForKeyPress = 300;
+					  if (button_hold_flag != 2) {
+						  TimerForKeyPress = 100;
+					  }
 					}
 				}
 				else {
 					TimerForKeyPress--;
 					if (TimerForKeyPress == 0) {
-					  //TODO
-					  KeyReg3[i] = NORMAL_STATE;
-					}
-			}
+						//TODO
+						KeyReg3[i] = NORMAL_STATE;
+						button_hold_flag = 2;
+
+						TimerForKeyPress = 300;
+					  }
+				}
 		}
 	}
 }

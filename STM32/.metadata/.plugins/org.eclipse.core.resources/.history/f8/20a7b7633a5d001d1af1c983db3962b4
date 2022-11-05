@@ -1,0 +1,20 @@
+/*
+ * fsm_led.c
+ *
+ *  Created on: Nov 6, 2022
+ *      Author: ASUS
+ */
+
+#include "fsm_led.h"
+
+int stateled = 0;
+
+void fsm_led_run() {
+	switch(stateled) {
+	case 0:
+		HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
+		break;
+	case 1:
+		break;
+	}
+}

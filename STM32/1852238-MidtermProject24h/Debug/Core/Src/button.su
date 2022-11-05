@@ -1,5 +1,6 @@
-button.c:22:5:isButtonINCPressed	4	static
-button.c:30:5:isButtonDECPressed	4	static
-button.c:38:5:isButtonRESPressed	4	static
-button.c:47:6:subKeyProcess	16	static
-button.c:62:6:getKeyInput	16	static
+button.c:23:5:isButtonINCPressed	4	static
+button.c:31:5:isButtonDECPressed	4	static
+button.c:39:5:isButtonRESPressed	4	static
+button.c:48:6:subKeyProcess	16	static
+button.c:63:6:holdKeyProcess	16	static
+button.c:76:6:getKeyInput	16	static

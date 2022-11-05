@@ -26,6 +26,7 @@
 #include "software_timer.h"
 #include "button.h"
 #include "fsm_simple.h"
+#include "fsm_led.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,10 +100,12 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
   state = 0;
+  setTimer1(100);
 
   while (1)
   {
 	  fsm_simple_buttons_run();
+	  fsm_led_run();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
