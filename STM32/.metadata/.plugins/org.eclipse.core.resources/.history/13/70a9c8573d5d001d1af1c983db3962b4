@@ -14,13 +14,6 @@ void fsm_simple_buttons_run() {
 		setTimer1(100);
 	}
 
-	if (timer2_flag == 1) {
-		if (state > 0) {
-			state--;
-		}
-		setTimer2(100);
-	}
-
 	switch(state) {
 	case 0:
 		display7SEG0(state);

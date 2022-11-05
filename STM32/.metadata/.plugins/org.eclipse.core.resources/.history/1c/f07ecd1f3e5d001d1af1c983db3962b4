@@ -18,7 +18,7 @@ void fsm_simple_buttons_run() {
 		if (state > 0) {
 			state--;
 		}
-		setTimer2(100);
+		setTimer2(1000);
 	}
 
 	switch(state) {

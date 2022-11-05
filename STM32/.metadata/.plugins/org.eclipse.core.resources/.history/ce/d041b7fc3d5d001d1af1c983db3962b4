@@ -23,7 +23,6 @@ int TimerForKeyPress = 300;
 int isButtonINCPressed() {
 	if(button_inc_flag == 1) {
 		button_inc_flag = 0;
-		setTimer2(1000);
 		return 1;
 	}
 	return 0;
@@ -32,7 +31,6 @@ int isButtonINCPressed() {
 int isButtonDECPressed() {
 	if(button_dec_flag == 1) {
 		button_dec_flag = 0;
-		setTimer2(1000);
 		return 1;
 	}
 	return 0;
@@ -41,7 +39,6 @@ int isButtonDECPressed() {
 int isButtonRESPressed() {
 	if (button_reset_flag == 1) {
 		button_reset_flag = 0;
-		setTimer2(1000);
 		return 1;
 	}
 	return 0;
