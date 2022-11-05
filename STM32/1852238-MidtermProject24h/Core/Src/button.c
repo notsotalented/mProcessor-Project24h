@@ -11,11 +11,11 @@ int button_inc_flag = 0;
 int button_dec_flag = 0;
 int button_reset_flag = 0;
 
-int KeyReg0 = NORMAL_STATE;
-int KeyReg1 = NORMAL_STATE;
-int KeyReg2 = NORMAL_STATE;
+int KeyReg0[3] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
+int KeyReg1[3] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
+int KeyReg2[3] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
 
-int KeyReg3 = NORMAL_STATE;
+int KeyReg3[3] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
 
 int TimerForKeyPress = 200;
 
@@ -35,8 +35,8 @@ int isButtonDECPressed() {
 	return 0;
 }
 
-int isButtonRESETPressed() {
-	if(button_reset_flag == 1) {
+int isButtonRESPressed() {
+	if (button_reset_flag == 1) {
 		button_reset_flag = 0;
 		return 1;
 	}
@@ -44,39 +44,52 @@ int isButtonRESETPressed() {
 }
 
 //This func do work
-void subKeyProcess(int which) {
+void subKeyProcess(int sw) {
 	//HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
-	button_inc_flag = 1;
-	button_dec_flag = 1;
-	button_reset_flag = 1;
+	switch(sw) {
+	case 0:
+		button_inc_flag = 1;
+		break;
+	case 1:
+		button_dec_flag = 1;
+		break;
+	case 2:
+		button_reset_flag = 1;
+		break;
+	}
 }
 
 void getKeyInput(){
-	  KeyReg0 = KeyReg1;
-	  KeyReg1 = KeyReg2;
+	for (int i = 0; i < 3; i++) {
+		KeyReg0[i] = KeyReg1[i];
+		KeyReg1[i] = KeyReg2[i];
 
+		if (i == 0) {
+			KeyReg2[i] = HAL_GPIO_ReadPin(INC_GPIO_Port, INC_Pin);
+		}
+		else if (i == 1) {
+			KeyReg2[i] = HAL_GPIO_ReadPin(DEC_GPIO_Port, DEC_Pin);
+		}
+		else {
+			KeyReg2[i] = HAL_GPIO_ReadPin(RESET_GPIO_Port, RESET_Pin);
+		}
 
-	  KeyReg2 = HAL_GPIO_ReadPin(INC_GPIO_Port, INC_Pin);
-
-
-
-	  if ((KeyReg0 == KeyReg1) && (KeyReg1 == KeyReg2)) {
-		  if (KeyReg3 != KeyReg2) {
-			  KeyReg3 = KeyReg2;
-			  if (KeyReg2 == PRESSED_STATE) {
-				  //TODO
-				  subKeyProcess();
-				  TimerForKeyPress = 200;
-			  }
-		  }
-		  else {
-			  TimerForKeyPress--;
-			  if (TimerForKeyPress == 0) {
-				  //TODO
-				  KeyReg3 = NORMAL_STATE;
-			  }
-		  }
-	  }
-
-
+		if ((KeyReg0[i] == KeyReg1[i]) && (KeyReg1[i] == KeyReg2[i])) {
+				if (KeyReg3[i] != KeyReg2[i]) {
+					KeyReg3[i] = KeyReg2[i];
+					if (KeyReg2[i] == PRESSED_STATE) {
+					  //TODO
+					  subKeyProcess(i);
+					  TimerForKeyPress = 300;
+					}
+				}
+				else {
+					TimerForKeyPress--;
+					if (TimerForKeyPress == 0) {
+					  //TODO
+					  KeyReg3[i] = NORMAL_STATE;
+					}
+			}
+		}
+	}
 }

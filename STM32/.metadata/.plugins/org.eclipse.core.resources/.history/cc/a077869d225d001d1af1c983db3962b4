@@ -1,0 +1,12 @@
+/*
+ * input_processing.c
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: ASUS
+ */
+
+#include "main.h"
+
+#define NO_OF_BUTTONS	3
+#define DURATION_FOR_AUTO_INCREASING	300
+#define	BUTTON_IS_PRESSED	GPIO_PIN_RESET
