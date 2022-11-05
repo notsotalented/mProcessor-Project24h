@@ -10,7 +10,7 @@
 int button_inc_flag = 0;
 int button_dec_flag = 0;
 int button_reset_flag = 0;
-int button_hold_flag = 2;
+int stop_hold = 0;
 
 int KeyReg0[3] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
 int KeyReg1[3] = {NORMAL_STATE, NORMAL_STATE, NORMAL_STATE};
@@ -49,7 +49,7 @@ int isButtonRESPressed() {
 
 //This func do work
 void subKeyProcess(int sw) {
-	//HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
+	//HAL_GPIO_TogglePin(LED_TEST_GPIO_Port, LED_TEST_Pin);
 	switch(sw) {
 	case 0:
 		button_inc_flag = 1;
@@ -64,6 +64,7 @@ void subKeyProcess(int sw) {
 }
 
 void holdKeyProcess(int sw) {
+	//HAL_GPIO_TogglePin(LED_TEST_GPIO_Port, LED_TEST_Pin);
 	switch(sw) {
 	case 0:
 		button_inc_flag = 1;
@@ -71,7 +72,7 @@ void holdKeyProcess(int sw) {
 	case 1:
 		button_dec_flag = 1;
 		break;
-	case 2:
+	default:
 		break;
 	}
 }
@@ -97,23 +98,21 @@ void getKeyInput(){
 					if (KeyReg2[i] == PRESSED_STATE) {
 					  //TODO
 					  subKeyProcess(i);
-					  button_hold_flag = i;
-					  TimerForKeyPress = 300;
-					  if (button_hold_flag != 2) {
-						  TimerForKeyPress = 100;
-					  }
+					  stop_hold = i;
+					  //TimerForKeyPress = 300;
 					}
+				    TimerForKeyPress = 900;
 				}
 				else {
 					TimerForKeyPress--;
 					if (TimerForKeyPress == 0) {
-						//TODO
-						KeyReg3[i] = NORMAL_STATE;
-						button_hold_flag = 2;
-
-						TimerForKeyPress = 300;
-					  }
-				}
+						if (KeyReg2[i] == PRESSED_STATE) {
+							  //TODO
+							holdKeyProcess(stop_hold);
+						}
+						TimerForKeyPress = 100;
+					}
 		}
 	}
+}
 }
